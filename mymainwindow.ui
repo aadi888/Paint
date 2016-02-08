@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyMainWindow</class>
+ <widget class="QMainWindow" name="MyMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>704</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MyMainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>704</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionLoad"/>
+    <addaction name="actionSave"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionPen"/>
+    <addaction name="actionEraser"/>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+    <addaction name="actionLine"/>
+    <addaction name="actionClear_All"/>
+    <addaction name="actionFront_Color"/>
+    <addaction name="actionBackground_Color"/>
+    <addaction name="actionResize"/>
+    <addaction name="actionRectangle"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuView"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="actionLoad"/>
+   <addaction name="actionSave"/>
+   <addaction name="actionUndo"/>
+   <addaction name="actionRedo"/>
+   <addaction name="actionClear_All"/>
+   <addaction name="actionResize"/>
+   <addaction name="actionPen"/>
+   <addaction name="actionLine"/>
+   <addaction name="actionEraser"/>
+   <addaction name="actionRectangle"/>
+   <addaction name="actionFront_Color"/>
+   <addaction name="actionBackground_Color"/>
+   <addaction name="actionPoly_Line"/>
+  </widget>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Downloads/bitmap/bitmap/icon/new_icon.bmp</normaloff>../../Downloads/bitmap/bitmap/icon/new_icon.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionLoad">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Downloads/bitmap/bitmap/icon/open_icon.bmp</normaloff>../../Downloads/bitmap/bitmap/icon/open_icon.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>Load</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Downloads/bitmap/bitmap/icon/save_icon.bmp</normaloff>../../Downloads/bitmap/bitmap/icon/save_icon.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionPen">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Downloads/bitmap/bitmap/icon/pen_icon.bmp</normaloff>../../Downloads/bitmap/bitmap/icon/pen_icon.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>Pen</string>
+   </property>
+  </action>
+  <action name="actionEraser">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Downloads/bitmap/bitmap/icon/eraser_icon.bmp</normaloff>../../Downloads/bitmap/bitmap/icon/eraser_icon.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>Eraser</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Downloads/bitmap/bitmap/icon/undo_icon.bmp</normaloff>../../Downloads/bitmap/bitmap/icon/undo_icon.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Downloads/bitmap/bitmap/icon/redo_icon.bmp</normaloff>../../Downloads/bitmap/bitmap/icon/redo_icon.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>Redo</string>
+   </property>
+  </action>
+  <action name="actionLine">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Downloads/bitmap/bitmap/icon/line_icon.bmp</normaloff>../../Downloads/bitmap/bitmap/icon/line_icon.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>Line</string>
+   </property>
+  </action>
+  <action name="actionClear_All">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Downloads/bitmap/bitmap/icon/clearall_icon.bmp</normaloff>../../Downloads/bitmap/bitmap/icon/clearall_icon.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>Clear All</string>
+   </property>
+  </action>
+  <action name="actionFront_Color">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Downloads/bitmap/bitmap/icon/fcolor_icon.bmp</normaloff>../../Downloads/bitmap/bitmap/icon/fcolor_icon.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>Front Color</string>
+   </property>
+  </action>
+  <action name="actionBackground_Color">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Downloads/bitmap/bitmap/icon/bcolor_icon.bmp</normaloff>../../Downloads/bitmap/bitmap/icon/bcolor_icon.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>Background Color</string>
+   </property>
+  </action>
+  <action name="actionResize">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Downloads/bitmap/bitmap/icon/resize_icon.bmp</normaloff>../../Downloads/bitmap/bitmap/icon/resize_icon.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>Resize</string>
+   </property>
+  </action>
+  <action name="actionPoly_Line">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Downloads/bitmap/bitmap/icon/polyline.png</normaloff>../../Downloads/bitmap/bitmap/icon/polyline.png</iconset>
+   </property>
+   <property name="text">
+    <string>Poly Line</string>
+   </property>
+  </action>
+  <action name="actionRectangle">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Downloads/bitmap/bitmap/icon/rect_icon.bmp</normaloff>../../Downloads/bitmap/bitmap/icon/rect_icon.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>Rectangle</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
